@@ -1,2 +1,7 @@
-# esp32
-Discover Bluetooth pair devices, select bluetooth device and send string to bluetooth and receive string data to android device.
+# ESP32 Bluetooth
+- Enable Bluetooth
+- Discover paired bluetooth device
+- Send String data to ESP32 bluetooth hardware
+- Receive String data from ESP32 bluetooth hardware
+- Android SDK 33 used
+- Android coroutine used

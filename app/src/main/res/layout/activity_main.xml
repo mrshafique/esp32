@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:stretchColumns="1"
+        tools:context=".screens.MainActivity">
+
+        <TableRow>
+
+            <TextView
+                android:text="Ref Voltage"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/mainEtVoltage"
+                android:layout_marginStart="16dp"
+                android:hint="00.00"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="16dp">
+
+            <TextView
+                android:text="Recharge Amount"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/mainEtRecharge"
+                android:layout_marginStart="16dp"
+                android:hint="00"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                tools:ignore="HardcodedText" />
+        </TableRow>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/mainBtnSendData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Send Data"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/mainTvCallback"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:hint="Callback"
+            android:textColor="@android:color/black"
+            tools:ignore="HardcodedText" />
+
+    </TableLayout>
+</layout>
